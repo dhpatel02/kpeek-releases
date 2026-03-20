@@ -16,6 +16,17 @@
                        length="7418729"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.0.15</title>
+            <pubDate>Fri, 20 Mar 2026 13:52:39 -0400</pubDate>
+            <sparkle:version>1.0.15</sparkle:version>
+            <sparkle:shortVersionString>1.0.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.0.15/KPeek.zip"
+                       sparkle:edSignature="0Sdv8n9aj5+TIeq0znhVJ/LobAM8ygGe+Eyxl2oT5YyNcolKSyVeFVK4Cy5YYgUtGCgDzAdHXkolVM26nKNRBA=="
+                       length="7418729"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
