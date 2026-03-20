@@ -2,40 +2,18 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>KPeek Updates</title>
-        <link>https://gist.githubusercontent.com/dhpatel02/ec60b7ac0bf56b253dd6a9fe669eace4/raw/appcast.xml</link>
+        <link>https://raw.githubusercontent.com/dhpatel02/kpeek-releases/main/appcast.xml</link>
         <description>KPeek auto-update feed</description>
         <language>en</language>
         <item>
-            <title>KPeek 1.0.11</title>
-            <pubDate>Fri, 20 Mar 2026 13:26:11 -0400</pubDate>
-            <sparkle:version>1.0.11</sparkle:version>
-            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+            <title>KPeek 1.0.14</title>
+            <pubDate>Fri, 20 Mar 2026 13:43:35 -0400</pubDate>
+            <sparkle:version>1.0.14</sparkle:version>
+            <sparkle:shortVersionString>1.0.14</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/dhpatel02/kafka-tool/releases/download/v1.0.11/KPeek.zip"
-                       sparkle:edSignature="PkbdgtyJs+hk/7yA1bJi2LFS/G0ouQ6PKMNvhUzQCFmaAtKcRAxkjiVVx5BLHXfE4VU28yoMHoiI0UM/O0EeBw=="
-                       length="7447494"
-                       type="application/octet-stream"/>
-        </item>
-        <item>
-            <title>KPeek 1.0.12</title>
-            <pubDate>Fri, 20 Mar 2026 13:29:46 -0400</pubDate>
-            <sparkle:version>1.0.12</sparkle:version>
-            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/dhpatel02/kafka-tool/releases/download/v1.0.12/KPeek.zip"
-                       sparkle:edSignature="pp+jx+5etOshQlVK1A3bcVHnFIfToQJ+3s/hpOGIjzZKpjEqLg9EHW1tLcb2BbNFevRaEDlMLEZoXIRbiKVWBw=="
-                       length="7447397"
-                       type="application/octet-stream"/>
-        </item>
-        <item>
-            <title>KPeek 1.0.13</title>
-            <pubDate>Fri, 20 Mar 2026 13:34:51 -0400</pubDate>
-            <sparkle:version>1.0.13</sparkle:version>
-            <sparkle:shortVersionString>1.0.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/dhpatel02/kafka-tool/releases/download/v1.0.13/KPeek.zip"
-                       sparkle:edSignature="VwmSfcwlKqsP8SJoBEXjxucsiq0gXJMszE/vfus7Zt87lrfrPrQTFCrU2NtRzzyZvbFE9KXHFuk2zs86Y3oDCQ=="
-                       length="7447759"
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.0.14/KPeek.zip"
+                       sparkle:edSignature="bRi7K1jnhpUi8CcVEF04VIX2YBbj76aewEJrS1knDnQSBqQHEzTvDvsQTZOh2NfJQwLfWpV2tz4MoiWGvqPeBw=="
+                       length="7418729"
                        type="application/octet-stream"/>
         </item>
         <!-- APPCAST_ITEMS -->
