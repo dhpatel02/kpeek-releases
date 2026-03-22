@@ -86,6 +86,38 @@
                        length="9231719"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.1</title>
+            <pubDate>Sun, 22 Mar 2026 01:54:37 -0400</pubDate>
+            <sparkle:version>1.2.1</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.1</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.1/KPeek.zip"
+                       sparkle:edSignature="fFV+qs90YXtLUjL7ZuQKP4FYdnBCVGTEXRk8SPqDIZdWXKIKMI8BXHKBHA+nd831OsRlJCxu3/54c/fOpO+nBA=="
+                       length="9231733"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
