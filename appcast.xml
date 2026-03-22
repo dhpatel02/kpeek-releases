@@ -278,6 +278,27 @@
                        length="6718434"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.8</title>
+            <pubDate>Sat, 22 Mar 2026 14:30:00 -0400</pubDate>
+            <sparkle:version>1.2.8</sparkle:version>
+            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Export/import connections as KPeek JSON or Offset Explorer XML</li>
+                <li>Connection picker for selecting which connections to import/export</li>
+                <li>Duplicate name resolution on import — appends (1), (2) etc.</li>
+                <li>Import now supports both JSON and XML formats</li>
+                <li>Dynamic release notes generated from commit log</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.8/KPeek.zip"
+                       sparkle:edSignature="D9E4PirHiBXFQLYzEGsuTyFKpaSwf4I1MSRWmWn2QRGG9if14AP5sMP5wRjcqQUn0fDAM9BLguLsrf/ZT/iTBQ=="
+                       length="6718984"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
