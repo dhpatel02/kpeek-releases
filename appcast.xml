@@ -44,6 +44,43 @@
             <sparkle:version>1.2.0</sparkle:version>
             <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in KPeek 1.2.0</h2>
+                <h3>Apple-Native UI Refresh</h3>
+                <ul>
+                    <li>Native sidebar with translucent material and system selection</li>
+                    <li>System accent color throughout the app</li>
+                    <li>Light and dark mode adaptive app icon</li>
+                    <li>Native segmented pickers for all tab bars</li>
+                </ul>
+                <h3>Stat Cards</h3>
+                <ul>
+                    <li>Topic Browser: partitions, retention, cleanup, compression</li>
+                    <li>Message Viewer: message count, partitions, avg size, time span</li>
+                    <li>Consumer Groups: total, stable, empty, dead counts</li>
+                    <li>Consumer Group Detail: state, members, topics, partitions, total lag</li>
+                </ul>
+                <h3>JSON Syntax Highlighting</h3>
+                <ul>
+                    <li>Color-coded JSON in message detail (keys, strings, numbers, booleans)</li>
+                    <li>Colors adapt automatically to light/dark mode</li>
+                </ul>
+                <h3>Live Consumer Group Lag</h3>
+                <ul>
+                    <li>Auto-refresh lag data every 5 seconds with Live toggle</li>
+                    <li>Lag chart shows all partitions with red for lagging ones</li>
+                </ul>
+                <h3>Message Viewer Improvements</h3>
+                <ul>
+                    <li>Hover highlighting on message rows</li>
+                    <li>Debounced JSONPath filter for smooth typing</li>
+                    <li>Duplicate detail window prevention</li>
+                </ul>
+                <h3>Bug Fixes</h3>
+                <ul>
+                    <li>Fixed crash when switching clusters</li>
+                </ul>
+            ]]></description>
             <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.0/KPeek.zip"
                        sparkle:edSignature="xWo8mqMhQZlofTze8kL4zOmkni+CoEgqPnC9a38vNhHm2qMwPdovsbrotYtiNpsHBSPLnHbx8RfdfcWqipeEBw=="
                        length="9231719"
