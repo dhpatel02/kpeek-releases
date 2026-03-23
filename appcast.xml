@@ -438,7 +438,7 @@
             <description><![CDATA[
                 <h2>What's New</h2>
                 <ul>
-                <li>Restrict Topic Management to contributors via hidden preference</li>
+                <li>Removed Topic Management</li>
                 </ul>
             ]]></description>
             <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.15/KPeek.zip"
