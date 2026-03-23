@@ -411,6 +411,24 @@
                        length="6754052"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.14</title>
+            <pubDate>Mon, 23 Mar 2026 13:07:18 -0400</pubDate>
+            <sparkle:version>1.2.14</sparkle:version>
+            <sparkle:shortVersionString>1.2.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add check for auto update on app launch</li>
+                <li>Signed-off-by: anevtiaatd &lt;126307746+anevtiaatd@users.noreply.github.com&gt;</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.14/KPeek.zip"
+                       sparkle:edSignature="sPfrXMps/LQL10TSNKt1+xM7AC4XYw5BTQ39FXaxGo/rSZaVmRg00Drsibd1f96qmQ7RmaAGU4cAWm6Sg3kGAA=="
+                       length="6753947"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
