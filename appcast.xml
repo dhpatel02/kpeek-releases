@@ -322,6 +322,29 @@
                        length="6725778"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.11</title>
+            <pubDate>Sun, 22 Mar 2026 20:38:24 -0400</pubDate>
+            <sparkle:version>1.2.11</sparkle:version>
+            <sparkle:shortVersionString>1.2.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Merge pull request #11 from dhpatel02/feature/consumer-group-lag-improvements</li>
+                <li>improve consumer group lag, UI polish, and dead code cleanup</li>
+                </ul>
+                <h2>Install</h2>
+                1. Download KPeek.zip
+                2. Unzip and drag KPeek.app to /Applications
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <b>Requires</b> macOS 15.0+ (Apple Silicon)
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.11/KPeek.zip"
+                       sparkle:edSignature="jNz4CIsfO2AR1Xv23sEWBCExt20imcL9yOSo0VLUMEgtjJLFI39U//MEgYdbAm0nDFqRXowVsR1FnYXlWsj9Dg=="
+                       length="6730253"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
