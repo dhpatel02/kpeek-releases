@@ -346,6 +346,45 @@
                        length="6730253"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.12</title>
+            <pubDate>Sun, 22 Mar 2026 21:10:45 -0400</pubDate>
+            <sparkle:version>1.2.12</sparkle:version>
+            <sparkle:shortVersionString>1.2.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>optimize responsiveness, fix large message lag, and ad-hoc sign build</li>
+                <li>Replace O(n log n) full re-sort in flushToUI with O(n) linear merge</li>
+                <li>Cache filteredMessages once per body evaluation (avoid double computation)</li>
+                <li>Lazy-cache headers, hexValue on KafkaMessage (like prettyValue)</li>
+                <li>Reuse single-threaded Tokio runtime instead of creating per admin op</li>
+                <li>Change CLIENT from Mutex to RwLock for concurrent read access</li>
+                <li>Tune rdkafka prefetch buffers (1000 msgs, 64MB) and adaptive poll timeout</li>
+                <li>Fix large message detail lag: remove NSTextView from SwiftUI ScrollView,</li>
+                <li>  enable non-contiguous layout, skip syntax highlighting above 512KB</li>
+                <li>Ad-hoc codesign dylibs and app bundle after install_name_tool rewrites</li>
+                <li>  to fix SIGKILL (Code Signature Invalid) crash on macOS Tahoe</li>
+                <li>Add production documentation across all Rust and Swift modules</li>
+                <li>Improve release notes generation and update v1.2.11 appcast</li>
+                <li>Improve consumer group lag, UI polish, and dead code cleanup</li>
+                <li>Add watermark failure tracking with N/A display in lag table</li>
+                <li>Optimize empty group fallback using cached consumer</li>
+                <li>Batch lag scan with bounded concurrency (50 threads)</li>
+                <li>Add warning banners for empty/dead groups and watermark timeouts</li>
+                <li>Disable batch scan lag feature behind flag for stability</li>
+                <li>Colorful View/Produce buttons in Topic Browser</li>
+                <li>Increase min window size to 1280x700</li>
+                <li>Right-align topic properties with truncation and hover tooltip</li>
+                <li>Remove unused kpeek_connect, kpeek_is_connected, MessageConsumer._topic</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.12/KPeek.zip"
+                       sparkle:edSignature="tmgcnIcMfoWtm/JbBIgL616+rAzVStldL5We/9XZ4spRnS8qSTtOEhq4QpMnGc6L0ZORLL8KQj0Iw+FwYIwtCQ=="
+                       length="6773992"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
