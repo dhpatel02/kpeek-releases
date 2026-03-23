@@ -331,14 +331,15 @@
             <description><![CDATA[
                 <h2>What's New</h2>
                 <ul>
-                <li>Merge pull request #11 from dhpatel02/feature/consumer-group-lag-improvements</li>
-                <li>improve consumer group lag, UI polish, and dead code cleanup</li>
+                <li>Improve consumer group lag performance with watermark failure tracking</li>
+                <li>Add warning banners for empty/dead consumer groups</li>
+                <li>Batch lag scan with bounded concurrency for stability</li>
+                <li>Optimize empty group fallback using cached consumer connections</li>
+                <li>Add colorful View/Produce buttons in Topic Browser</li>
+                <li>Increase minimum window size to 1280x700 for better layout</li>
+                <li>Right-align topic properties with truncation and hover tooltips</li>
+                <li>Remove unused dead code</li>
                 </ul>
-                <h2>Install</h2>
-                1. Download KPeek.zip
-                2. Unzip and drag KPeek.app to /Applications
-                3. Right-click &gt; Open on first launch (ad-hoc signed)
-                <b>Requires</b> macOS 15.0+ (Apple Silicon)
             ]]></description>
             <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.11/KPeek.zip"
                        sparkle:edSignature="jNz4CIsfO2AR1Xv23sEWBCExt20imcL9yOSo0VLUMEgtjJLFI39U//MEgYdbAm0nDFqRXowVsR1FnYXlWsj9Dg=="
