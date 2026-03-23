@@ -395,6 +395,7 @@
                 <h2>What's New</h2>
                 <ul>
                 <li>Add pagination support</li>
+                <li>Signed-off-by: anevtiaatd &lt;126307746+anevtiaatd@users.noreply.github.com&gt;</li>
                 <li>drag-to-reorder connections, theme switching, and smooth cluster switch</li>
                 <li>Add drag-and-drop reorder for connections on the connect screen</li>
                 <li>  with native drag image, blue drop indicator line, and animated reorder</li>
@@ -420,11 +421,29 @@
                 <h2>What's New</h2>
                 <ul>
                 <li>Add check for auto update on app launch</li>
+                <li>Signed-off-by: anevtiaatd &lt;126307746+anevtiaatd@users.noreply.github.com&gt;</li>
                 </ul>
             ]]></description>
             <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.14/KPeek.zip"
                        sparkle:edSignature="sPfrXMps/LQL10TSNKt1+xM7AC4XYw5BTQ39FXaxGo/rSZaVmRg00Drsibd1f96qmQ7RmaAGU4cAWm6Sg3kGAA=="
                        length="6753947"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.15</title>
+            <pubDate>Mon, 23 Mar 2026 16:42:42 -0400</pubDate>
+            <sparkle:version>1.2.15</sparkle:version>
+            <sparkle:shortVersionString>1.2.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Restrict Topic Management to contributors via hidden preference</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.15/KPeek.zip"
+                       sparkle:edSignature="QLjsvW5eTUS8jAIRg028+IJLXU/m38I/8oI7VVh2W0wSZjyCkdDPfGdcmZE1H0pjYR2A5gnzhU/2mlab3qSeAg=="
+                       length="6758872"
                        type="application/octet-stream"/>
         </item>
         <!-- APPCAST_ITEMS -->
