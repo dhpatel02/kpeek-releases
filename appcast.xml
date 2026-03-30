@@ -446,6 +446,34 @@
                        length="6758872"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 1.2.16</title>
+            <pubDate>Mon, 30 Mar 2026 15:29:55 -0400</pubDate>
+            <sparkle:version>1.2.16</sparkle:version>
+            <sparkle:shortVersionString>1.2.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add background lag monitoring with macOS notifications</li>
+                <li>Pin up to 10 consumer groups for background lag monitoring (bell icon per group row)</li>
+                <li>Background polling every 30s checks lag for all pinned groups</li>
+                <li>macOS native notifications when total lag exceeds user-defined threshold (default 1000)</li>
+                <li>Right-click bell icon to set custom lag threshold per group</li>
+                <li>Notification click navigates directly to the group's detail popup</li>
+                <li>Sortable columns on lag table (Topic, Partition, Committed, End, Lag)</li>
+                <li>Auto-sort by lag descending during live mode</li>
+                <li>Pin count indicator and Clear All button in bottom bar</li>
+                <li>5-minute notification cooldown per group to prevent spam</li>
+                <li>Pinned groups persist across app restarts</li>
+                <li>Non-blocking app quit (Kafka disconnect runs in background)</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.16/KPeek.zip"
+                       sparkle:edSignature="0uBwudDVjDPzit/+NJ7nHtE4k4ZPkTAPkNYARzfUoFHhK0IBXf0KMsr92HzBGUPp7JiFiObC1B312JMM8nWcAg=="
+                       length="6837479"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
