@@ -503,134 +503,39 @@
             <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New</h2>
+                <h2>What's New in v1.3.0</h2>
+                <h3>Features</h3>
                 <ul>
-                <li>Remove redundant nil coalescing on non-optional subtitle</li>
-                <li>Co-Authored-By: Claude Opus 4.6 (1M context) &lt;noreply@anthropic.com&gt;</li>
-                <li>address all critical, high, and medium severity review findings</li>
-                <li>Critical fixes:</li>
-                <li>Lag scan threads now use Arc-cloned fields instead of raw pointers,</li>
-                <li>  eliminating use-after-free and unsound aliasing UB</li>
-                <li>Export XML documents credential exposure warning</li>
-                <li>High fixes:</li>
-                <li>Session poll releases mutex before 100ms broker poll (lock-free polling)</li>
-                <li>DefaultHasher replaced with deterministic FNV-1a for SSL cache keys</li>
-                <li>kpeek_update_filter wired to ConsumerSession.set_filter()</li>
-                <li>to_cstring replaces interior null bytes instead of silently truncating</li>
-                <li>catch_unwind added to kpeek_consumer_group_lag</li>
-                <li>SSL hostname verification documented as intentional trade-off</li>
-                <li>Medium fixes:</li>
-                <li>uuid_simple uses atomic counter for collision safety</li>
-                <li>parse_member_assignment caps loops at 10,000 iterations</li>
-                <li>RTF/tokenizer boolean checks use char slice comparison (O(1) vs O(n))</li>
-                <li>RTF Unicode escape handles U+8000+ with signed 16-bit two's complement</li>
-                <li>  and supplementary characters via UTF-16 surrogate pairs</li>
-                <li>Scan mutex locks recover from poison instead of panicking</li>
-                <li>Lag scan group.id uses unique suffix to avoid cluster conflicts</li>
-                <li>Stale kpeek_format_value comment fixed</li>
-                <li>address critical and high-severity review findings</li>
-                <li>1. Fix force-unwrap crash in prettyValue — use optional binding instead</li>
-                <li>   of kpeek_format_json(ptr)! which segfaults if Rust returns null</li>
-                <li>2. Add null ctx guards to kpeek_start_session, kpeek_session_poll,</li>
-                <li>   kpeek_stop_session, kpeek_health_check, kpeek_get_metrics</li>
-                <li>3. Replace cache.get().unwrap() with ok_or_else() in offset consumer</li>
-                <li>   lookup to prevent panic on missing key</li>
-                <li>4. Fix ctx use-after-free — check self?.ctx inside async blocks instead</li>
-                <li>   of capturing raw pointer before dispatch</li>
-                <li>5. Fix min_timestamp_ms sentinel — use i64::MAX/MIN instead of 0 to</li>
-                <li>   correctly handle epoch-zero and negative timestamps</li>
-                <li>6. Fix RTF highlighter char/byte index mismatch — use byte offset map</li>
-                <li>   for safe string slicing with multi-byte Unicode characters</li>
-                <li>Update buttons to Tahoe UI style</li>
-                <li>Replace custom-styled buttons (manual padding, gradient backgrounds,</li>
-                <li>clip shapes) with native .borderedProminent + .controlSize(.small)</li>
-                <li>for Older/Newer pagination and View/Produce topic actions.</li>
-                <li>messages not streaming to UI during consumption</li>
-                <li>Two bugs fixed:</li>
-                <li>1. Rust: initial fetch timeout/capacity check only ran on empty polls.</li>
-                <li>   If messages flowed from some partitions but not all, the timeout</li>
-                <li>   never fired and initial_fetch_done stayed false. Now checks on</li>
-                <li>   every poll with messages too.</li>
-                <li>2. Swift: during initial fetch phase, messages accumulated without</li>
-                <li>   flushing to UI. Now flushes every 0.5s during initial fetch for</li>
-                <li>   immediate visual feedback.</li>
-                <li>test: add Swift model tests (22) and UI smoke test automation</li>
-                <li>tests/swift/TestModels.swift: 22 tests for ConsumeMode FFI mapping,</li>
-                <li>  merge sort (empty, interleave, stability, large arrays), array</li>
-                <li>  chunking, and KafkaMessage model</li>
-                <li>tests/ui/test-ui-smoke.applescript: 7 UI tests via accessibility</li>
-                <li>  (window existence, element count, menu bar, View menu, resize, crash)</li>
-                <li>tests/run-tests.sh: unified runner for Rust + Swift + optional UI</li>
-                <li>Total: 111 Rust + 22 Swift = 133 automated tests.</li>
-                <li>Run: ./tests/run-tests.sh (or --ui to include UI smoke tests)</li>
-                <li>test: add 45 more tests (111 total) covering edge cases and new modules</li>
-                <li>consumer.rs: 10 tests (MessageStats, SessionState, uuid_simple)</li>
-                <li>metrics.rs: 7 tests (counters, snapshots, concurrent access)</li>
-                <li>filter.rs: 14 edge cases (unicode, None values, deep nesting, booleans,</li>
-                <li>  nulls, sort by offset/value, empty/single element, all-filtered-out)</li>
-                <li>offset_explorer.rs: 14 edge cases (JAAS parsing, whitespace trimming,</li>
-                <li>  protocol mapping roundtrips, empty/multi export, SASL_PLAINTEXT)</li>
-                <li>test: add 66 unit tests for core modules and import</li>
-                <li>filter.rs: 16 tests (key/value matching, JSONPath, sorting, combined)</li>
-                <li>format.rs: 20 tests (lag, retention, time span, bytes, hex, quotes, JSON)</li>
-                <li>error.rs: 11 tests (codes, categories, retryability, anyhow classifier)</li>
-                <li>offset_explorer.rs: 12 tests (import, export, escaping, roundtrip)</li>
-                <li>All tests run without Kafka — pure logic validation via cargo test.</li>
-                <li>stop button now correctly stops consuming instead of restarting</li>
-                <li>The button action was always calling startConsuming(), with an onTapGesture</li>
-                <li>calling stopConsuming() — both fired simultaneously causing a restart.</li>
-                <li>Now the action toggles based on isConsuming state.</li>
-                <li>use withCString for topic in startConsuming to prevent use-after-free</li>
-                <li>The previous code used (topic as NSString).utf8String which returns an</li>
-                <li>inner pointer that may be invalidated before the FFI call. Now uses</li>
-                <li>topic.withCString to ensure the pointer is valid during the call.</li>
-                <li>Also captures maxMessageCount and keepOldest before the async block.</li>
-                <li>extract KPeekFFI wrapper and add RAII memory management</li>
-                <li>New KPeekFFI class provides type-safe Swift wrappers for all FFI calls,</li>
-                <li>hiding raw C pointer manipulation. ManagedCString ensures kpeek_free_*</li>
-                <li>is always called via deinit. KPeekBridge delegates consumer group, topic</li>
-                <li>management, producer, and topic config calls to KPeekFFI.</li>
-                <li>scripts/download-stats.sh queries GitHub release download counts and</li>
-                <li>logs to CSV for trend tracking. Run manually or via cron.</li>
-                <li>Add connection health check and internal metrics</li>
-                <li>Health check via kpeek_health_check() returns broker count or error.</li>
-                <li>Internal metrics track messages consumed/produced, bytes, poll count,</li>
-                <li>errors, and uptime with atomic counters for lock-free access.</li>
-                <li>Add Offset Explorer XML import/export in Rust</li>
-                <li>New import/offset_explorer.rs handles XML parsing and generation for</li>
-                <li>Offset Explorer connection configs. Includes JAAS config parsing,</li>
-                <li>security protocol mapping, and XML escaping. No external dependencies.</li>
-                <li>Add display formatting utilities in Rust</li>
-                <li>New core/format.rs with lag formatting (5.2M/1.3K), retention display</li>
-                <li>(7d/24h/∞), time span (5s/2m/1h), byte count, hex dump, smart quote</li>
-                <li>normalization, and JSON compaction. FFI exports as stateless functions.</li>
-                <li>move polling state machine from Swift to Rust ConsumerSession</li>
-                <li>New ConsumerSession wraps MessageConsumer with partition tracking, auto-stop,</li>
-                <li>initial fetch phase, and incremental stats. Swift pollLoop simplified from</li>
-                <li>~180 lines to ~50 lines — just polls kpeek_session_poll() and flushes to UI.</li>
-                <li>Session handles idle detection, cap enforcement, and partition coverage.</li>
-                <li>Add message filter and sort engine in Rust</li>
-                <li>New core/filter.rs with FilterConfig (key/value substring, JSONPath),</li>
-                <li>SortConfig (5 fields, asc/desc), and filter_and_sort() entry point.</li>
-                <li>FFI CFilterConfig struct and kpeek_update_filter() stub added.</li>
-                <li>Full integration happens in Phase 2 (consumer session).</li>
-                <li>replace global FFI state with KPeekContext handles</li>
-                <li>Replace 4 global statics (CLIENT, CONSUMER, CONSUMER_REF, PRODUCER) and</li>
-                <li>3 scan statics with a heap-allocated KPeekContext struct. All stateful FFI</li>
-                <li>functions now take a context pointer. Swift bridge holds OpaquePointer and</li>
-                <li>passes it to every call. Legacy connect/disconnect kept for compatibility.</li>
-                <li>Add structured error types with codes and categories</li>
-                <li>New KPeekError enum with 8 error variants, error codes matching</li>
-                <li>KPeekErrorCode C enum, and ErrorCategory (transient/permanent/config)</li>
-                <li>for UI-driven retry/prompt behavior. Includes anyhow::Error classifier.</li>
-                <li>Add type-safe C enums to FFI header</li>
-                <li>Replace magic integer comments with named enums: KPeekSecurityProtocol,</li>
-                <li>KPeekSaslMechanism, KPeekStartPosition, KPeekJsonTokenType. Integer</li>
-                <li>values unchanged — fully backwards compatible with existing Swift code.</li>
-                <li>restructure Rust backend into core/ and ffi/ modules</li>
-                <li>Move domain logic from kafka/ to core/ (connection, consumer, producer, types).</li>
-                <li>Convert ffi.rs to ffi/ directory module. kafka/ becomes a re-export shim for</li>
-                <li>backwards compatibility. No logic changes — pure file reorganization.</li>
+                <li>Background lag monitoring with macOS notifications — get alerted when consumer groups fall behind</li>
+                <li>Inline threshold editor for lag monitoring controls</li>
+                <li>Connection health check and internal metrics tracking</li>
+                <li>Offset Explorer XML import/export for connection configs</li>
+                <li>Message filter and sort engine with key/value substring and JSONPath support</li>
+                <li>Human-readable display formatting for lag, retention, time spans, and byte counts</li>
+                </ul>
+                <h3>Improvements</h3>
+                <ul>
+                <li>Restructured backend into modular core/ffi architecture for better maintainability</li>
+                <li>Moved polling state machine from Swift to Rust for improved performance and reliability</li>
+                <li>Replaced global state with context handles, enabling safer concurrent operations</li>
+                <li>New type-safe FFI wrapper with automatic memory management (RAII)</li>
+                <li>Updated buttons to native Tahoe UI style</li>
+                <li>Structured error types with categories for smarter error handling</li>
+                </ul>
+                <h3>Bug Fixes</h3>
+                <ul>
+                <li>Fix messages not streaming to UI during initial consumption</li>
+                <li>Fix stop button restarting consumption instead of stopping</li>
+                <li>Fix potential crash from use-after-free in topic consumption</li>
+                <li>Fix crash in JSON pretty-printing when Rust returns null</li>
+                <li>Fix RTF highlighter handling of multi-byte Unicode characters</li>
+                <li>Fix timestamp handling for epoch-zero and negative timestamps</li>
+                <li>Eliminate use-after-free in lag scan threads</li>
+                <li>Numerous stability and safety improvements across the FFI boundary</li>
+                </ul>
+                <h3>Testing</h3>
+                <ul>
+                <li>133 automated tests (111 Rust + 22 Swift) covering core logic, edge cases, and UI smoke tests</li>
                 </ul>
             ]]></description>
             <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.3.0/KPeek.zip"
