@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>KPeek Updates</title>
+        <link>https://raw.githubusercontent.com/dhpatel02/kpeek-releases/main/appcast.xml</link>
+        <description>KPeek auto-update feed</description>
+        <language>en</language>
+        <item>
+            <title>KPeek 1.0.14</title>
+            <pubDate>Fri, 20 Mar 2026 13:43:35 -0400</pubDate>
+            <sparkle:version>1.0.14</sparkle:version>
+            <sparkle:shortVersionString>1.0.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.0.14/KPeek.zip"
+                       sparkle:edSignature="bRi7K1jnhpUi8CcVEF04VIX2YBbj76aewEJrS1knDnQSBqQHEzTvDvsQTZOh2NfJQwLfWpV2tz4MoiWGvqPeBw=="
+                       length="7418729"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.0.15</title>
+            <pubDate>Fri, 20 Mar 2026 13:52:39 -0400</pubDate>
+            <sparkle:version>1.0.15</sparkle:version>
+            <sparkle:shortVersionString>1.0.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.0.15/KPeek.zip"
+                       sparkle:edSignature="0Sdv8n9aj5+TIeq0znhVJ/LobAM8ygGe+Eyxl2oT5YyNcolKSyVeFVK4Cy5YYgUtGCgDzAdHXkolVM26nKNRBA=="
+                       length="7418729"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.1.0</title>
+            <pubDate>Fri, 20 Mar 2026 14:47:44 -0400</pubDate>
+            <sparkle:version>1.1.0</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.1.0/KPeek.zip"
+                       sparkle:edSignature="WjCm+boIlCq5iMQPTkv4i9jXY+8U3OiE+swPPnHEcd4pKjeORVgEan9YzjaHERaXSd3A212HSq75Y5ruy4VmAw=="
+                       length="7449389"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.0</title>
+            <pubDate>Sun, 22 Mar 2026 01:46:37 -0400</pubDate>
+            <sparkle:version>1.2.0</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in KPeek 1.2.0</h2>
+                <h3>Apple-Native UI Refresh</h3>
+                <ul>
+                    <li>Native sidebar with translucent material and system selection</li>
+                    <li>System accent color throughout the app</li>
+                    <li>Light and dark mode adaptive app icon</li>
+                    <li>Native segmented pickers for all tab bars</li>
+                </ul>
+                <h3>Stat Cards</h3>
+                <ul>
+                    <li>Topic Browser: partitions, retention, cleanup, compression</li>
+                    <li>Message Viewer: message count, partitions, avg size, time span</li>
+                    <li>Consumer Groups: total, stable, empty, dead counts</li>
+                    <li>Consumer Group Detail: state, members, topics, partitions, total lag</li>
+                </ul>
+                <h3>JSON Syntax Highlighting</h3>
+                <ul>
+                    <li>Color-coded JSON in message detail (keys, strings, numbers, booleans)</li>
+                    <li>Colors adapt automatically to light/dark mode</li>
+                </ul>
+                <h3>Live Consumer Group Lag</h3>
+                <ul>
+                    <li>Auto-refresh lag data every 5 seconds with Live toggle</li>
+                    <li>Lag chart shows all partitions with red for lagging ones</li>
+                </ul>
+                <h3>Message Viewer Improvements</h3>
+                <ul>
+                    <li>Hover highlighting on message rows</li>
+                    <li>Debounced JSONPath filter for smooth typing</li>
+                    <li>Duplicate detail window prevention</li>
+                </ul>
+                <h3>Bug Fixes</h3>
+                <ul>
+                    <li>Fixed crash when switching clusters</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.0/KPeek.zip"
+                       sparkle:edSignature="xWo8mqMhQZlofTze8kL4zOmkni+CoEgqPnC9a38vNhHm2qMwPdovsbrotYtiNpsHBSPLnHbx8RfdfcWqipeEBw=="
+                       length="9231719"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.1</title>
+            <pubDate>Sun, 22 Mar 2026 01:54:37 -0400</pubDate>
+            <sparkle:version>1.2.1</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.1</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.1/KPeek.zip"
+                       sparkle:edSignature="fFV+qs90YXtLUjL7ZuQKP4FYdnBCVGTEXRk8SPqDIZdWXKIKMI8BXHKBHA+nd831OsRlJCxu3/54c/fOpO+nBA=="
+                       length="9231733"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.2</title>
+            <pubDate>Sun, 22 Mar 2026 02:27:05 -0400</pubDate>
+            <sparkle:version>1.2.2</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.2</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.2/KPeek.zip"
+                       sparkle:edSignature="EIWO7OEX7aTpIfJfv6o53sUOB8XPWtlJcpNJV0k5C2xhHmex51BReN3B2IyI/4hf8sD5y/Lh+cC4Iw9xUbQdCw=="
+                       length="6648931"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.3</title>
+            <pubDate>Sun, 22 Mar 2026 03:53:16 -0400</pubDate>
+            <sparkle:version>1.2.3</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.3</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.3/KPeek.zip"
+                       sparkle:edSignature="LxgCoen5QE36z1z6Hej/86DlenD6o+hCByU4DgjwikApAfiRIhkMTtZ0TtvWKpx6dyrNqggqmSwrOFpnbv8SBA=="
+                       length="6708053"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.4</title>
+            <pubDate>Sun, 22 Mar 2026 04:07:38 -0400</pubDate>
+            <sparkle:version>1.2.4</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.4</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.4/KPeek.zip"
+                       sparkle:edSignature="qwjUQJfSlOPv8XmdGQBljV+rJLDNcjXxKOZCfqKMS/XfwVTKzZRkwWcQJc831/BlAZ0clfvcQH+/EIPlR1kEAA=="
+                       length="6714336"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.5</title>
+            <pubDate>Sun, 22 Mar 2026 04:28:13 -0400</pubDate>
+            <sparkle:version>1.2.5</sparkle:version>
+            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.5</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.5/KPeek.zip"
+                       sparkle:edSignature="e8ZEuBE4z8M0YINhq82np71mbOx3RlbQCFdDvrd9TCakVssGP/CL93730MmfQe44/FVKlLa0H322Q7SvDYztBA=="
+                       length="6714331"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.6</title>
+            <pubDate>Sun, 22 Mar 2026 09:29:44 -0400</pubDate>
+            <sparkle:version>1.2.6</sparkle:version>
+            <sparkle:shortVersionString>1.2.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>KPeek v1.2.6</h2>
+                Lightweight native macOS Kafka message viewer. Self-contained .app bundle — no dependencies required.
+                <h3>Install</h3>
+                1. Download <code>KPeek.zip</code>
+                2. Unzip and drag <code>KPeek.app</code> to <code>/Applications</code>
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <h3>Requirements</h3>
+                <ul>
+                <li>macOS 15.0+ (Apple Silicon)</li>
+                </ul>
+                <h3>Keyboard Shortcuts</h3>
+                | Shortcut | Action |
+                |----------|--------|
+                | Cmd+R | Refresh topics |
+                | Cmd+Return | Start consuming |
+                | Cmd+. | Stop consuming |
+                | Cmd+K | Clear messages |
+                | Cmd+Shift+E | Export messages as JSON |
+                | Cmd+Shift+W | Disconnect |
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.6/KPeek.zip"
+                       sparkle:edSignature="YbiAdPk7oJQm9vaRwDd6R9oHVFVK7c/eDoewMjMS/AaDfLtHJma4otB1UlRwIROOiCTZ6WRchIM1fUe5zGerAw=="
+                       length="6718434"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.8</title>
+            <pubDate>Sat, 22 Mar 2026 14:30:00 -0400</pubDate>
+            <sparkle:version>1.2.8</sparkle:version>
+            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Export/import connections as KPeek JSON or Offset Explorer XML</li>
+                <li>Connection picker for selecting which connections to import/export</li>
+                <li>Duplicate name resolution on import — appends (1), (2) etc.</li>
+                <li>Import now supports both JSON and XML formats</li>
+                <li>Dynamic release notes generated from commit log</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.8/KPeek.zip"
+                       sparkle:edSignature="D9E4PirHiBXFQLYzEGsuTyFKpaSwf4I1MSRWmWn2QRGG9if14AP5sMP5wRjcqQUn0fDAM9BLguLsrf/ZT/iTBQ=="
+                       length="6718984"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.10</title>
+            <pubDate>Sun, 22 Mar 2026 11:21:14 -0400</pubDate>
+            <sparkle:version>1.2.10</sparkle:version>
+            <sparkle:shortVersionString>1.2.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Merge pull request #10 from dhpatel02/feature/topic-browser-nav-buttons</li>
+                <li>add View and Produce buttons to Topic Browser detail panel</li>
+                </ul>
+                <h2>Install</h2>
+                1. Download KPeek.zip
+                2. Unzip and drag KPeek.app to /Applications
+                3. Right-click &gt; Open on first launch (ad-hoc signed)
+                <b>Requires</b> macOS 15.0+ (Apple Silicon)
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.10/KPeek.zip"
+                       sparkle:edSignature="Rp6maNIMEwI2CtNZFMJCrQqQCD7Xd6yjvBv8XUV1XYQ3RxfD77+HQgrdKQgkzfl4BtyeS/xu+oAOSlZGmwOHBQ=="
+                       length="6725778"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.11</title>
+            <pubDate>Sun, 22 Mar 2026 20:38:24 -0400</pubDate>
+            <sparkle:version>1.2.11</sparkle:version>
+            <sparkle:shortVersionString>1.2.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Improve consumer group lag performance with watermark failure tracking</li>
+                <li>Add warning banners for empty/dead consumer groups</li>
+                <li>Batch lag scan with bounded concurrency for stability</li>
+                <li>Optimize empty group fallback using cached consumer connections</li>
+                <li>Add colorful View/Produce buttons in Topic Browser</li>
+                <li>Increase minimum window size to 1280x700 for better layout</li>
+                <li>Right-align topic properties with truncation and hover tooltips</li>
+                <li>Remove unused dead code</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.11/KPeek.zip"
+                       sparkle:edSignature="jNz4CIsfO2AR1Xv23sEWBCExt20imcL9yOSo0VLUMEgtjJLFI39U//MEgYdbAm0nDFqRXowVsR1FnYXlWsj9Dg=="
+                       length="6730253"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.12</title>
+            <pubDate>Sun, 22 Mar 2026 21:10:45 -0400</pubDate>
+            <sparkle:version>1.2.12</sparkle:version>
+            <sparkle:shortVersionString>1.2.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>optimize responsiveness, fix large message lag, and ad-hoc sign build</li>
+                <li>Replace O(n log n) full re-sort in flushToUI with O(n) linear merge</li>
+                <li>Cache filteredMessages once per body evaluation (avoid double computation)</li>
+                <li>Lazy-cache headers, hexValue on KafkaMessage (like prettyValue)</li>
+                <li>Reuse single-threaded Tokio runtime instead of creating per admin op</li>
+                <li>Change CLIENT from Mutex to RwLock for concurrent read access</li>
+                <li>Tune rdkafka prefetch buffers (1000 msgs, 64MB) and adaptive poll timeout</li>
+                <li>Fix large message detail lag: remove NSTextView from SwiftUI ScrollView,</li>
+                <li>  enable non-contiguous layout, skip syntax highlighting above 512KB</li>
+                <li>Ad-hoc codesign dylibs and app bundle after install_name_tool rewrites</li>
+                <li>  to fix SIGKILL (Code Signature Invalid) crash on macOS Tahoe</li>
+                <li>Add production documentation across all Rust and Swift modules</li>
+                <li>Improve release notes generation and update v1.2.11 appcast</li>
+                <li>Improve consumer group lag, UI polish, and dead code cleanup</li>
+                <li>Add watermark failure tracking with N/A display in lag table</li>
+                <li>Optimize empty group fallback using cached consumer</li>
+                <li>Batch lag scan with bounded concurrency (50 threads)</li>
+                <li>Add warning banners for empty/dead groups and watermark timeouts</li>
+                <li>Disable batch scan lag feature behind flag for stability</li>
+                <li>Colorful View/Produce buttons in Topic Browser</li>
+                <li>Increase min window size to 1280x700</li>
+                <li>Right-align topic properties with truncation and hover tooltip</li>
+                <li>Remove unused kpeek_connect, kpeek_is_connected, MessageConsumer._topic</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.12/KPeek.zip"
+                       sparkle:edSignature="tmgcnIcMfoWtm/JbBIgL616+rAzVStldL5We/9XZ4spRnS8qSTtOEhq4QpMnGc6L0ZORLL8KQj0Iw+FwYIwtCQ=="
+                       length="6773992"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.13</title>
+            <pubDate>Mon, 23 Mar 2026 12:59:02 -0400</pubDate>
+            <sparkle:version>1.2.13</sparkle:version>
+            <sparkle:shortVersionString>1.2.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add pagination support</li>
+                <li>Signed-off-by: anevtiaatd &lt;126307746+anevtiaatd@users.noreply.github.com&gt;</li>
+                <li>drag-to-reorder connections, theme switching, and smooth cluster switch</li>
+                <li>Add drag-and-drop reorder for connections on the connect screen</li>
+                <li>  with native drag image, blue drop indicator line, and animated reorder</li>
+                <li>Add Dark/Light/System theme toggle via View menu, persisted with AppStorage</li>
+                <li>Soften light theme with off-white background tint</li>
+                <li>Fix message detail view backgrounds in light mode (remove low-opacity overlays)</li>
+                <li>Fix cluster switch flashing home screen: add switchCluster() that</li>
+                <li>  disconnects internally without setting isConnected=false</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.13/KPeek.zip"
+                       sparkle:edSignature="NVBuEkLf7/ksaOUUGeqp7L3GKNTZsevK3BLiOB3/+58moZBqAWuWXojk2xIVjdUCPeWWggOOsKlRV2/1rf7xCQ=="
+                       length="6754052"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.14</title>
+            <pubDate>Mon, 23 Mar 2026 13:07:18 -0400</pubDate>
+            <sparkle:version>1.2.14</sparkle:version>
+            <sparkle:shortVersionString>1.2.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add check for auto update on app launch</li>
+                <li>Signed-off-by: anevtiaatd &lt;126307746+anevtiaatd@users.noreply.github.com&gt;</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.14/KPeek.zip"
+                       sparkle:edSignature="sPfrXMps/LQL10TSNKt1+xM7AC4XYw5BTQ39FXaxGo/rSZaVmRg00Drsibd1f96qmQ7RmaAGU4cAWm6Sg3kGAA=="
+                       length="6753947"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.15</title>
+            <pubDate>Mon, 23 Mar 2026 16:42:42 -0400</pubDate>
+            <sparkle:version>1.2.15</sparkle:version>
+            <sparkle:shortVersionString>1.2.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Remove Topic Management from sidebar</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.15/KPeek.zip"
+                       sparkle:edSignature="QLjsvW5eTUS8jAIRg028+IJLXU/m38I/8oI7VVh2W0wSZjyCkdDPfGdcmZE1H0pjYR2A5gnzhU/2mlab3qSeAg=="
+                       length="6758872"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.16</title>
+            <pubDate>Mon, 30 Mar 2026 15:29:55 -0400</pubDate>
+            <sparkle:version>1.2.16</sparkle:version>
+            <sparkle:shortVersionString>1.2.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add background lag monitoring with macOS notifications</li>
+                <li>Pin up to 10 consumer groups for background lag monitoring (bell icon per group row)</li>
+                <li>Background polling every 30s checks lag for all pinned groups</li>
+                <li>macOS native notifications when total lag exceeds user-defined threshold (default 1000)</li>
+                <li>Right-click bell icon to set custom lag threshold per group</li>
+                <li>Notification click navigates directly to the group's detail popup</li>
+                <li>Sortable columns on lag table (Topic, Partition, Committed, End, Lag)</li>
+                <li>Auto-sort by lag descending during live mode</li>
+                <li>Pin count indicator and Clear All button in bottom bar</li>
+                <li>5-minute notification cooldown per group to prevent spam</li>
+                <li>Pinned groups persist across app restarts</li>
+                <li>Non-blocking app quit (Kafka disconnect runs in background)</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.16/KPeek.zip"
+                       sparkle:edSignature="0uBwudDVjDPzit/+NJ7nHtE4k4ZPkTAPkNYARzfUoFHhK0IBXf0KMsr92HzBGUPp7JiFiObC1B312JMM8nWcAg=="
+                       length="6837479"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.2.17</title>
+            <pubDate>Mon, 30 Mar 2026 17:50:08 -0400</pubDate>
+            <sparkle:version>1.2.17</sparkle:version>
+            <sparkle:shortVersionString>1.2.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Restyle lag monitoring controls with inline threshold editor</li>
+                <li>Inline editable threshold field per pinned group replacing right-click menu</li>
+                <li>Bell icon restyled as blue gradient button matching View button design</li>
+                <li>Button turns red when lag exceeds threshold</li>
+                <li>Fixed-width columns for consistent row alignment</li>
+                <li>Threshold field dismisses cursor on Enter</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.2.17/KPeek.zip"
+                       sparkle:edSignature="TsR1xCjuUqSgZdHn4p+pXqJSWNfSlytSHdGvjgyIvsJgYuNfe+Lq4/zqhus5jjEDNrPIxfv3KzDGBu7oz2OeCA=="
+                       length="6836369"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.3.0</title>
+            <pubDate>Thu, 02 Apr 2026 14:20:15 -0400</pubDate>
+            <sparkle:version>1.3.0</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in v1.3.0</h2>
+                <h3>Features</h3>
+                <ul>
+                <li>Background lag monitoring with macOS notifications — get alerted when consumer groups fall behind</li>
+                <li>Inline threshold editor for lag monitoring controls</li>
+                <li>Connection health check and internal metrics tracking</li>
+                <li>Offset Explorer XML import/export for connection configs</li>
+                <li>Message filter and sort engine with key/value substring and JSONPath support</li>
+                <li>Human-readable display formatting for lag, retention, time spans, and byte counts</li>
+                </ul>
+                <h3>Improvements</h3>
+                <ul>
+                <li>Restructured backend into modular core/ffi architecture for better maintainability</li>
+                <li>Moved polling state machine from Swift to Rust for improved performance and reliability</li>
+                <li>Replaced global state with context handles, enabling safer concurrent operations</li>
+                <li>New type-safe FFI wrapper with automatic memory management (RAII)</li>
+                <li>Updated buttons to native Tahoe UI style</li>
+                <li>Structured error types with categories for smarter error handling</li>
+                </ul>
+                <h3>Bug Fixes</h3>
+                <ul>
+                <li>Fix messages not streaming to UI during initial consumption</li>
+                <li>Fix stop button restarting consumption instead of stopping</li>
+                <li>Fix potential crash from use-after-free in topic consumption</li>
+                <li>Fix crash in JSON pretty-printing when Rust returns null</li>
+                <li>Fix RTF highlighter handling of multi-byte Unicode characters</li>
+                <li>Fix timestamp handling for epoch-zero and negative timestamps</li>
+                <li>Eliminate use-after-free in lag scan threads</li>
+                <li>Numerous stability and safety improvements across the FFI boundary</li>
+                </ul>
+                <h3>Testing</h3>
+                <ul>
+                <li>133 automated tests (111 Rust + 22 Swift) covering core logic, edge cases, and UI smoke tests</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.3.0/KPeek.zip"
+                       sparkle:edSignature="T/BtD6zxS5OIYSXFhWJO/WHozaeNW8b6Z6F04JyDYGWRfTud+FG+4SxAu766r6YKutEbtSaTwc5BKCOB7ccxAg=="
+                       length="6882391"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>KPeek 1.3.1</title>
+            <pubDate>Thu, 02 Apr 2026 15:24:33 -0400</pubDate>
+            <sparkle:version>1.3.1</sparkle:version>
+            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Add topic-to-consumer group mapping in Topic Browser</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v1.3.1/KPeek.zip"
+                       sparkle:edSignature="ZwDe3ESMOb5r3L5V8n/f6VymVTc1Yl6/HkbfrJyiDmJesap81FLh6IU45zgE2g+ia5BD59sIWJix4BiW/7aTCg=="
+                       length="6925710"
+                       type="application/octet-stream"/>
+        </item>
+        <!-- APPCAST_ITEMS -->
+    </channel>
+</rss>
