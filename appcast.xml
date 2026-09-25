@@ -689,6 +689,26 @@
                        length="7703681"
                        type="application/octet-stream"/>
         </item>
+        <item>
+            <title>KPeek 2.0.1</title>
+            <pubDate>Fri, 25 Sep 2026 13:08:16 -0400</pubDate>
+            <sparkle:version>2.0.1</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                <li>Stop the app freezing when disconnecting with 100K messages loaded</li>
+                <li>Keep the Message Viewer responsive with 100K messages loaded</li>
+                <li>Show a topic's message count in the Topic Browser properties</li>
+                <li>Cut the idle wait between fetches when consuming large messages</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/dhpatel02/kpeek-releases/releases/download/v2.0.1/KPeek.zip"
+                       sparkle:edSignature="Y/LYkNK+KpsNJufY6sDrTNDUXhYmWr97rgoqO5N6ZfX+f6kbzLJxhL6MAp+3/TJjb8MO8QxsjpwU1/DIZ0UeBA=="
+                       length="7745646"
+                       type="application/octet-stream"/>
+        </item>
         <!-- APPCAST_ITEMS -->
     </channel>
 </rss>
